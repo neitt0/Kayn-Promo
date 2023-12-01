@@ -7,8 +7,8 @@
 
 body {
   padding: 0 10vw;
-  background-color: #161319;
-  color: rgb(236, 217, 197);
+  background-color: #0A070A;
+  color: #ecd9c5;
 }
 
 body::-webkit-scrollbar {
@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 #lore h1, #abilities h1 {
@@ -66,12 +66,30 @@ body::-webkit-scrollbar {
 
 #abilities {
   display: flex;
+  height: auto;
+  padding: 3rem 0;
+}
+
+.abilitySet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abilitySet > * {
+  width: 75px;
+  height: 75px;
+  background-color: #ecd9c5;
+  margin-bottom: .8rem;
 }
 
 .abilitiesContainer {
   flex: 1;
+  margin-right: 3rem;
 }
 
 .abilitiesVideo {
  flex: 1;
+ aspect-ratio: 19/6;
+ background-color: #ecd9c5;
 }

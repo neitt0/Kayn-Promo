@@ -6,9 +6,13 @@
 }
 
 body {
-  padding: 0 10vw;
+  /* padding: 0 10vw; */
   background-color: #0A070A;
   color: #ecd9c5;
+}
+
+section {
+  margin: 0 10vw;
 }
 
 body::-webkit-scrollbar {
@@ -26,7 +30,7 @@ body::-webkit-scrollbar {
 
 #hero div {
   position: absolute;
-  background: linear-gradient(to bottom, rgb(0, 0, 0, 0),rgb(0, 0, 0, 1) 76%, rgb(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0), #0A070A 70%, #070507 100%);
   /* color: white; */
   text-align: center;
   height: calc(60% + 50px);
@@ -68,12 +72,15 @@ body::-webkit-scrollbar {
   display: flex;
   height: auto;
   padding: 3rem 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .abilitySet {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 500px;
 }
 
 .abilitySet > * {
@@ -85,12 +92,12 @@ body::-webkit-scrollbar {
 
 .abilitiesContainer {
   flex: 1;
-  margin-right: 3rem;
+  margin: 0 3rem;
 }
 
 .abilitiesVideo {
  flex: 1;
- aspect-ratio: 19/6;
+ aspect-ratio: 16/9;
  background-color: #ecd9c5;
 }
 
@@ -113,6 +120,14 @@ body::-webkit-scrollbar {
   overflow-y: hidden;
 }
 
+.characters > div:first-child {
+  margin: 10px 40px 10px 0;
+}
+
+.characters > div:last-child {
+  margin: 10px 0 10px 40px;
+}
+
 .characters::-webkit-scrollbar {
   display: none;
 }
@@ -122,4 +137,27 @@ body::-webkit-scrollbar {
   height: 200px;
   background-color: #ecd9c5;
   margin: 10px 40px;
+}
+
+footer {
+  height: 1.5rem;
+  background-color: #070507;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 10vw;
+  font-size: .8rem;
+}
+
+footer a {
+  color:#ecd9c5;
+  margin: 0 10px;
+  text-decoration: none;
 }

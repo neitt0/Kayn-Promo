@@ -93,3 +93,33 @@ body::-webkit-scrollbar {
  aspect-ratio: 19/6;
  background-color: #ecd9c5;
 }
+
+#relatedCharacters {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charactersContainer {
+  width: 100%;
+}
+
+.characters {
+  display: flex;
+  width: auto;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.characters::-webkit-scrollbar {
+  display: none;
+}
+
+.characters > * {
+  min-width: 200px;
+  height: 200px;
+  background-color: #ecd9c5;
+  margin: 10px 40px;
+}

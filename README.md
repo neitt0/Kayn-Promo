@@ -1,3 +1,3 @@
-# Kayn-Promo - [Link](https://neitt0.github.io/Kayn-Promo/)
+# Kayn-Promo - [Preview](https://neitt0.github.io/Kayn-Promo/)
 
 # MVP

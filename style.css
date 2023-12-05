@@ -75,6 +75,24 @@ h2 {
   justify-content: center;
 }
 
+.abilitiesContainer::before {
+  content: "|";
+  position: relative;
+  transform: scale(1, 17);
+  left: -60px;
+  top: 220px;
+}
+
+.abilitiesContainer {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.abilitiesContainer > div {
+  max-width: 500px;
+}
+
 .abilitySet {
   display: flex;
   align-items: center;
@@ -86,16 +104,6 @@ h2 {
   height: 75px;
   background-color: #ecd9c5;
   margin-bottom: .8rem;
-}
-
-.abilitiesContainer {
-  flex: 1;
-  display: grid;
-  place-content: center;
-}
-
-.abilitiesContainer > div {
-  max-width: 500px;
 }
 
 .abilitiesVideo {
@@ -124,14 +132,6 @@ h2 {
   margin-top: 2rem;
 }
 
-.characters > div:first-child {
-  margin: 10px 40px 10px 0;
-}
-
-.characters > div:last-child {
-  margin: 10px 0 10px 40px;
-}
-
 .characters::-webkit-scrollbar {
   display: none;
 }
@@ -140,7 +140,15 @@ h2 {
   min-width: 200px;
   height: 200px;
   background-color: #ecd9c5;
-  margin: 10px 40px;
+  margin: 10px 55px;
+}
+
+.characters > div:first-child {
+  margin-right: 55px;
+}
+
+.characters > div:last-child {
+  margin-left: 55px;
 }
 
 footer {

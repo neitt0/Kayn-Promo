@@ -11,7 +11,7 @@ body {
 }
 
 section:not(#hero) {
-  margin: 12rem 10vw;
+  margin: 12rem 15vw;
 }
 
 body::-webkit-scrollbar {
@@ -58,6 +58,13 @@ body::-webkit-scrollbar {
   padding: 3rem 0;
 }
 
+#lore p {
+  padding: 0 7%;
+  border-left: 1px solid #ecd9c5;
+  border-right: 1px solid #ecd9c5;
+  margin-top: 3rem;
+}
+
 h2 {
   font-size: 4rem;
 }
@@ -70,23 +77,15 @@ h2 {
 #abilities {
   display: flex;
   height: auto;
-  padding: 3rem 0;
   align-items: center;
   justify-content: center;
-}
-
-.abilitiesContainer::before {
-  content: "|";
-  position: relative;
-  transform: scale(1, 17);
-  left: -60px;
-  top: 220px;
 }
 
 .abilitiesContainer {
   flex: 1;
   display: grid;
-  place-content: center;
+  padding-left: 5%;
+  /* border-left: 1px solid #ecd9c5; */
 }
 
 .abilitiesContainer > div {
